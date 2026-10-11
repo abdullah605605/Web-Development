@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111827;
+    background: #ffffff;
+    font-size: 12px;
+}
+
+.site-header {
+ 
+    height: 48px;
+    position: relative;
+    border-top: 4px solid #39485d;
+    border-bottom: 1px solid #e4e4e4;
+    background: #7e6262;
+}
+
+.header-inner {
+     
+      font-size: 60px;
+    width: 84%;
+    max-width: 920px;
+    height: 43px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.student-name {
+color: whitesmoke  ;
+}
+.header-inner a{
+color: whitesmoke  ;
+}
+
+.logo {
+    color: #39485d;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+}
+
+.logo span {
+    color: #d7374b;
+}
+
+.student-name {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #39485d;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #283447;
+    font-size: 9px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    width: 84%;
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.hero {
+    min-height: 664px;
+    display: flex;
+    align-items: center;
+    padding: 90px 0 105px;
+}
+
+.hero .content {
+    padding-top: 25px;
+}
+
+.eyebrow {
+    margin: 0 0 12px;
+    color: #d7374b;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+}
+
+h1 {
+    margin: 0 0 12px;
+    color: #111827;
+    font-size: 40px;
+    line-height: 1.08;
+    letter-spacing: -0.8px;
+    font-weight: 700;
+}
+
+.intro {
+    margin: 0 0 17px;
+    color: #39485d;
+    font-size: 11px;
+    line-height: 1.55;
+}
+
+.button {
+    display: inline-block;
+    padding: 9px 13px;
+    border-radius: 3px;
+    background: #d7374b;
+    color: #ffffff;
+    font-size: 9px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.button:hover {
+    opacity: 0.9;
+}
+
+.learning {
+    background: #f7f7f7;
+    padding: 43px 0 40px;
+}
+
+.learning h2 {
+    margin: 0 0 19px;
+    color: #111827;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.cards {
+    display: flex;
+    gap: 14px;
+}
+
+.card {
+    flex: 1;
+    min-height: 82px;
+    padding: 18px 15px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    background: #ffffff;
+}
+
+.html-card {
+    border-top: 2px solid #344a7a;
+}
+
+.css-card {
+    border-top: 2px solid #426b4e;
+}
+
+.card h3 {
+    margin: 0 0 9px;
+    color: #111827;
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+.card p {
+    margin: 0;
+    color: #39485d;
+    font-size: 8px;
+    line-height: 1.5;
+}
+
+.site-footer {
+    min-height: 42px;
+    display: flex;
+    align-items: center;
+    background: #202020;
+    color: #ffffff;
+}
+
+.site-footer p {
+    margin: 0;
+    font-size: 8px;
+    font-weight: 700;
+}
+
+@media (max-width: 650px) {
+    .header-inner,
+    .content {
+        width: 86%;
+    }
+
+    .student-name {
+        position: static;
+        transform: none;
+        margin-left: auto;
+        margin-right: 18px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    .hero {
+        min-height: 560px;
+        padding: 70px 0;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .intro br {
+        display: none;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+}
